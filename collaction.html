@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="navbar">
+        <nav>
+            <h1>Nostra</h1>
+
+            <div class="navbar-links">
+                <p class="link-navbar"><a href="index.html">Home</a></p>
+                <p class="link-navbar"><a href="collection.html">Collections</a></p>
+                <p class="link-navbar"><a href="contact.html">Contact</a></p>
+            </div>
+
+            <div class="navbar-menu-toggle" onclick="showNavbar()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </div>
+
+    <div class="side-navbar">
+        <p style="text-align: right;">
+            <i class="fa-solid fa-xmark" onclick="closeNavbar()"></i>
+        </p>
+        <div class="side-navbar-links">
+            <p class="side-link-navbar"><a href="#">Home</a></p>
+            <p class="side-link-navbar"><a href="#">Collections</a></p>
+            <p class="side-link-navbar"><a href="#">Contact</a></p>
+        </div>
+    </div>
+
+    <div class="product-section">
+        <form class="product-search">
+            <input type="text" id="search" placeholder="Search">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <div class="products" id="products">
+            <div class="products-box">
+                <img src="pexels-photo-1043148.jpeg" alt="Product Image">
+                <p>Blue Shirt</p>
+            </div>
+            <div class="products-box">
+                <img src="pexels-photo-1639729.webp" alt="Product Image">
+                <p>Combo Offer|Black T-shirt</p>
+            </div>
+            <div class="products-box">
+                <img src="pexels-photo-769749.jpeg" alt="Product Image">
+                <p>Chack Shirt</p>
+            </div>
+            <div class="products-box">
+                <img src="pexels-pixabay-52518.jpg" alt="Product Image">
+                <p>Jeans Pant</p>
+            </div>
+            <div class="products-box">
+                <img src="pexels-nietjuhart-934070.jpg" alt="Product Image">
+                <p>Combo Offer|white T-shirt</p>
+            </div>
+            <div class="products-box">
+                <img src="pexels-photo-1484807.webp" alt="Product Image">
+                <p>Pink T-shirt</p>
+            </div>
+            <div class="products-box">
+                <img src="/pexels-photo-3399995.webp" alt="Product Image">
+                <p>Black T-shirt</p>
+            </div>
+            <div class="products-box">
+                <img src="/pexels-photo-8499271.webp" alt="Product Image">
+                <p>white T-shirt</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h2 class="heading-text">Nostra</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis inventore fugiat animi libero.</p>
+                <div class="footer-icon-container">
+                    <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-youtube" style="color: #ffffff;"></i>
+                </div>
+            </div>
+        </div>
+        <p>@2025 Nostra.com</p>
+    </div>
+
+    <script src="collection.js"></script>
+
+</body>
+
+</html>
