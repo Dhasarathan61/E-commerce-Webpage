@@ -317,11 +317,15 @@ body {
     .header-image {
         display: none;
     }
+    .navbar-menu-toggle{
+        display:none;
+    }
 
     .service-container-1, .service-container-2 {
         flex-direction: column;
         align-items: center;
     }
+    
 
     .contact-container {
         width: 90%;
