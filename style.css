@@ -12,20 +12,21 @@ body {
     font-style: normal;
 }
 
+/* Navbar Styles */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+                rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    background-color: #fff; /* Added background for clarity */
 }
 
-.navbar nav{
-/*     display: flex; */
-/*     justify-content: space-between; */
-/*     align-items: center; */
+.navbar nav {
     padding: 10px;
 }
+
 .navbar-links {
     display: flex;
     column-gap: 20px;
@@ -34,6 +35,7 @@ body {
 .navbar-links a {
     text-decoration: none;
     color: #1D232C;
+    transition: color 0.3s;
 }
 
 .navbar-links a:hover {
@@ -41,10 +43,13 @@ body {
     color: #1D232C;
 }
 
-.nabar-menu-toggle{
-    display:none;
+/* Corrected typo here */
+.navbar-menu-toggle {
+    display: none;
+    cursor: pointer;
 }
-.side-navbar{
+
+.side-navbar {
     background-color: #1D232C;
     width: 50%;
     height: 100%;
@@ -55,113 +60,137 @@ body {
     color: white;
     display: none;
     transition: 2s;
-
 }
 
-.side-link-navbar{
+.side-link-navbar {
     margin-bottom: 30px;
-
 }
-.side-link-navbar a{
+
+.side-link-navbar a {
     text-decoration: none;
     color: white;
 }
-.side-link-navbar a:hover{
+
+.side-link-navbar a:hover {
     text-decoration: underline;
 }
-.header{
+
+/* Header */
+.header {
     display: flex;
     justify-content: center;
     padding: 50px;
     gap: 50px;
 }
-.header-button{
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 10px;
+
+.header-button {
+    padding: 10px 20px;
     background-color: #1D232C;
     color: white;
     cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
 }
 
-.service{
+.header-button:hover {
+    background-color: #333;
+}
+
+/* Services */
+.service {
     padding: 20px;
-
 }
-.service-container-1{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
 
-}
-.service-container-2{
+.service-container-1, .service-container-2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
-.service-container-2 div{
+
+.service-container-2 div {
     background-color: #F2F4F7;
     border-radius: 5px;
     padding: 10px;
 }
-.new-arrival{
+
+/* New Arrivals */
+.new-arrival {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
+}
 
-}
-.new-arrival-container{
+.new-arrival-container {
     position: relative;
-    flex-basis:20%;
+    flex-basis: 20%;
+    text-align: center;
 }
-.new-arrival-button{
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    margin-top:10px;
+
+.new-arrival-button {
+    padding: 5% 10%;
+    margin-top: 10px;
     color: #1D232C;
     position: absolute;
     top: 50%;
-    left:12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 10px;
     border: none;
-
+    background-color: #F2F4F7;
+    transition: background-color 0.3s;
 }
-.news{
+
+.new-arrival-button:hover {
+    background-color: #ddd;
+}
+
+/* News Section */
+.news {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
-
 }
-.news input{
+
+.news input {
     padding: 11px;
-    width:80vw;
+    width: 80vw;
     margin-bottom: 10px;
     border: solid black 3px;    
 }
-.news button{
+
+.news button {
     margin-top: 10px;
-    color:#F2F4F7;
+    color: #F2F4F7;
     background-color: black;
     border-radius: 10px;
     padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
-.footer{
-    padding:20px;
+
+.news button:hover {
+    background-color: #333;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
     margin-top: 40px;
     background-color: #1D232C;
     color: white;
-
+    text-align: center;
 }
-.product-section{
+
+/* Products */
+.product-section {
     margin-top: 20px;
 }
-.product-search{
+
+.product-search {
     width: 80%;
     border: solid black 2px;
     border-radius: 20px;
@@ -171,47 +200,47 @@ body {
     padding: 10px;
     margin: auto;
 }
-.product-search input{
+
+.product-search input {
     border: none;
     background-color: transparent;
     width: 100%;
-
-}
-.product-search input:focus{
     outline: none;
-    
 }
-.products{
+
+.products {
     padding: 20px;
     display: flex;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
-.products-box{
+
+.products-box {
     text-align: center;
     flex-basis: 20%;
 }
-.products-box img{
+
+.products-box img {
     border-radius: 10px;
     width: 200px;
     height: 300px;
 }
-.contact-container{
+
+/* Contact */
+.contact-container {
     background-color: #1D232C;
     width: 50%;
-    height: 50%;
-    margin-left: 25%;
+    height: auto;
+    margin: 0 auto;
     border-radius: 12px;
     color: white;
-
+    padding: 20px;
 }
+
 .contact-section {
     text-align: center;
     padding: 40px;
-    
-    
 }
 
 .contact-section h2 {
@@ -225,14 +254,12 @@ body {
     margin: 20px auto;
     display: flex;
     flex-direction: column;
-    
 }
 
 .contact-form label {
     text-align: left;
     margin: 10px 0 5px;
     font-weight: 500;
-    
 }
 
 .contact-form input, 
@@ -252,16 +279,17 @@ body {
     color: white;
     font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .contact-form button:hover {
     background-color: #555;
 }
 
+/* Responsive Design */
 @media screen and (max-width: 700px) {
     .navbar-menu-toggle {
         display: block;
-        cursor: pointer;
     }
 
     .navbar-links {
@@ -290,20 +318,14 @@ body {
         display: none;
     }
 
-    .service-container-1 {
+    .service-container-1, .service-container-2 {
         flex-direction: column;
         align-items: center;
     }
 
-    .service-container-2 {
-        flex-direction: column;
-    }
-
     .contact-container {
         width: 90%;
-        margin-left: 5%;
         height: auto;
         padding: 20px;
     }
 }
-
